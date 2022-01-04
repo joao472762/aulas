@@ -1,12 +1,12 @@
-## Welcome to GitHub Pages
+## Ben vindo ao GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/joao472762/aulas-de-Java-Script/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+você pode usar o  [editor no GitHuh acessando](https://github.com/joao472762/aulas-de-Java-Script/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+sempre que fazer um commit neste repositório , o GitHub Pages vai rodar [Jekyll](https://jekyllrb.com/) e recriar á pagina do seu site, do conteudo do seu makeDown
 
 ### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Markdown é uam lightweight e sintaxe de facíl uso para estilizar o seu texto. It includes conventions for
 
 ```markdown
 Syntax highlighted code block
