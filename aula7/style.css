@@ -1,0 +1,39 @@
+*{font-family: Arial, Helvetica, sans-serif;}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to left, #BADCFA, #74D3ED );
+    padding:  1em;
+}
+h1{
+    margin: 1em 0em;
+}
+main{
+    background: #5ca7ed49;
+    padding: 1.5em 1.5em 0.2em 1.5em;
+    box-shadow: 4px 4px 4px #5EACD6;
+    border-radius: 9px;
+    font-size: 1.2em;
+}
+div#res{
+    margin-bottom: 9px;
+    margin-top : 6px;
+}
+input{
+    text-align: center;
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 1em
+}
+input#idade{
+    width: 100px;
+    outline: none
+}
+input:hover{
+    background: #dce9f5;
+}
+img{
+    height: 230px;
+}

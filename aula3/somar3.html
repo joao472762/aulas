@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>somar</title>
+</head>
+<body>
+    <h1>Somando números</h1>
+    <input type="number" name="texto1" id="texto1"> +
+    <input type="number" name="texto2" id="texto2">
+    <input type="button" value="somar"  id= "botao">
+    <div id="res">Resulatado</div>
+</body>
+<script>
+    var somar = window.document.getElementById('botao')
+    somar.addEventListener('click', clicar)
+    function clicar(){
+        var res = window.document.getElementById('res')
+        var txt1 = window.document.getElementById('texto1')
+        var txt2 = window.document.getElementById('texto2')
+        var n1 = Number(txt1.value)
+        var n2 = Number(txt2.value)
+        s = n1 + n2
+        res.innerHTML =  `o resultado de ${n1} + ${n2} é igual a ${s}`
+    }
+</script>
+</html>

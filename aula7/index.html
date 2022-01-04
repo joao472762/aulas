@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Verifiacador de idade
+        </h1>
+    </header>
+    <main>
+        <div id="idadee">
+            <p><label for="idade"> Qual é a sua data de nascimento
+                 <input type="number" name="idade" id="idade">
+                </label>
+            </p>
+        </div>
+        <div id="sexo">
+            <p>
+                <label for="masculino">
+                    <input type="radio" name="sexo" id="masculino" checked>Masculino
+                </label>
+                <label for="feminino">
+                    <input type="radio" name="sexo" id="femenino" onselect="sele">
+                    Femenino
+                </label>
+                <input type="button" value="confirmar" id='botao' onclick="clicou()">
+        </div>
+        <div id="res">sua resposta</div>
+        <div id="imgagem">
+            <img src="imagens/transparent.png" alt="imagem de uma pessoa" id='img'>
+        </div>
+        
+    </main>
+</body>
+<script src="java.js"></script>
+</html>

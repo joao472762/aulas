@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>you go learnin about <strong>Dom</strong></h1>
+    <p>step 1</p>
+    <p>open Dom</p>
+    <div id="more">if you want learn more acesee our site and</div>
+    <br>
+    <div class="chaiz">
+        you can follow us in facebook and in twitter
+    </div>
+</body>
+<script>
+    var site = window.document.getElementById('more')
+    site.style.background = "gray"
+    site.style.width= "300px"
+    site.style.padding = '30px'
+    site.style.borderRadius = '9px'
+    site.style.color = 'white'
+    var corpo = window.document.body
+    corpo.style.background = 'blue'
+    var ti = window.document.getElementsByTagName('p')[0]
+    window.document.write(ti.innerText)
+    ti.style.color = "#fff"
+    site.innerText = 'i need smoke and hoes ' + site.innerText
+    var div2= window.document.querySelector('div.chaiz')
+    div2.style.background = 'white'
+</script>
+</html>

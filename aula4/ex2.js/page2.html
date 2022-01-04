@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Passaporte Brasil</h1>
+    <select name="" id="">
+        <option value="pais" selected disabled >escolha um pais</option>
+        <option value="pais">Estados Unidos</option>
+        <option value="pais" id="brasil">Brasil</option>
+        <option value="pais">Paris</option>
+        <option value="pais">Rusia</option>
+    </select>
+    <input type="button" value="confirmar" id='conf' onclick="clicou()">
+    <div id="voce">Dados</div>
+</body>
+<script>
+    function clicou(){
+        var voce = window.document.getElementById('voce')
+        var naci = window.document.getElementById('brasil')
+        var nacionalidade = (naci.value)
+        voce.innerHTML = `${nacionalidade}`
+    }
+</script>
+</html>

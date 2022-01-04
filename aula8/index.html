@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                <label for="texto1">
+                    Digite o inicio <input type="number" name="texto1" id="texto1">
+                </label>
+            </p>
+            <p>
+                <label for="texto2">
+                    Digite o fim <input type="number" name="texto2" id="texto2">
+                </label>
+            </p>
+            <p>
+                <label for="texto3">
+                    Digite o paso <input type="number" name="texto3" id="texto3">
+                </label>
+                <input type="button" value="confirmar" onclick="clicou()">
+            </p>
+        </div>
+        <div id='ask'>
+            resposta 
+        </div>
+    </section>
+</body>
+<script src="dados.js"></script>
+</html>

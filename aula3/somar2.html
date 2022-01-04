@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body{
+            font-size: 1.4em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div{
+            margin-top: 2em;
+        }
+        input{
+            padding: 6px;
+            font-size: 1.3em;
+            width: 140px;
+            font-weight: 500;
+            border-radius: 8px;
+            outline: none;
+            text-align: center;
+            box-shadow: 4px 5px 14px #00000033;
+        }
+        #botao:hover{
+            background-color: rgb(51, 51, 51);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Somando números
+    </h1>
+    <input type="number" name="texto1" id="texto1"> +
+    <input type="number" name="texto2" id="texto2">
+    <input type="button" value="somar" id="botao">
+    <div id=res>Resultado</div>
+</body>
+<script>
+    var aleluia = document.getElementById('botao')
+    aleluia.addEventListener('click',clicou)
+    function clicou(){
+        var res= window.document.getElementById('res')
+        var txt1 = window.document.getElementById('texto1')
+        var txt2 = window.document.getElementById('texto2')
+        var n1 = Number(txt1.value)
+        var n2 = Number(txt2.value)
+        s = n1 + n2
+        res.innerHTML= `A soma entre ${n1} 
+        e ${n2} é igual a <strong> ${s} </strong>`
+    }
+</script>
+</html>

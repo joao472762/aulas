@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>sistema de Multas</h1>
+    <p>digite a velocidade em que o veiculo passou </p> velocidade do carro
+    <input type="number" name="texto1" id="texto"> Km/h
+    <input type="button" name="velo" id="confirmar" value="confirmar">
+    <div id="situ">situação</div>
+</body>
+<script>
+    var situ = window.document.getElementById('situ')
+    var confirmar = document.getElementById('confirmar')
+    confirmar.addEventListener('click',clicou)
+    function clicou(){
+        var velo = document.getElementById('texto')
+        var velocidade = Number(velo.value)
+        situ.innerHTML = `<p>o veiculo passou a uma velocidade de  <strong>${velocidade} Km/h </p>`
+        if (velocidade > 60){
+            situ.innerHTML += `<p> o motorista  está <strong> multado</strong> </p>`
+        }
+        situ.innerHTML  += 'tenha uma boa viagem'
+        
+    }
+</script>
+</html>
